@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ropa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f3f3f3;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        * {
+        box-sizing: border-box;
+        }
+
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+        float: left;
+        width: 30%;
+        height: 950px; /* only for demonstration, should be removed */
+        background: #ccc;
+        padding: 50px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+        list-style-type: none;
+        padding: 0;
+        }
+
+        article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 300px; /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+        nav, article {
+            width: 100%;
+            height: auto;
+        }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1> Bienvenidos a mi rinconcito de la moda</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#inicio"> Inicio </a></li> <br>
+        <li><a href="#acerca"> Acerca de </a></li><br>
+        <li><a href="#contacto">Contacto</a></li><br>
+    </ul>
+</nav>
+
+<section id="inicio">
+    <h2>INICIO</h2>
+    <p> 
+       ¡Bienvenido(a) a nuestra tienda de moda, el lugar donde tu estilo cobra vida! Aquí encontrarás una cuidada selección de ropa diseñada 
+       para hacerte sentir auténtico(a), cómodo(a) y a la vanguardia de las últimas tendencias. Ya sea que busques un look casual, elegante 
+       o algo único para una ocasión especial, tenemos opciones para cada personalidad y momento. Nos apasiona la moda y queremos que disfrutes 
+       cada paso de tu experiencia con nosotros. Explora nuestras colecciones, descubre nuevas inspiraciones y déjate llevar por tu creatividad. 
+       Gracias por visitarnos, ¡estamos aquí para ayudarte a vestir tu mejor versión!
+    </p>
+
+    <h2>Acerca de</h2>
+    <p>
+        En nuestra tienda creemos que la ropa es mucho más que una necesidad: es una forma de expresión, confianza y estilo personal. 
+        Nos dedicamos a ofrecer prendas de alta calidad que combinan comodidad, diseño y tendencia, pensadas para adaptarse a cada estilo de vida.
+        Trabajamos con pasión para seleccionar y crear colecciones que inspiren a nuestros clientes a vestirse con autenticidad y seguridad. 
+        Valoramos la originalidad, la inclusión y la sostenibilidad, por eso buscamos marcas y materiales que reflejen esos principios. Nuestro
+        objetivo es que cada persona que nos visite encuentre algo que la represente y la haga sentir bien consigo misma.
+    </p>
+    <h2>PRENDAS A TU GUSTO</h2>
+    <p>
+        Esta sección presenta una tabla con información clave sobre diversas prendas de moda, incluyendo detalles como color, talla, marca, tipo
+        de prenda, material y precio aproximado. Su objetivo es ofrecer una visión general de las opciones actuales en el mercado, destacando 
+        tanto las tendencias estéticas como el enfoque creciente en la sostenibilidad y la variedad de estilos disponibles para distintos gustos 
+        y necesidades.
+    </p>
+<img src = "ropa.jpg">
+    <table>
+        <thead>
+            <tr>
+                <th>Color</th>
+                <th>Talla</th>
+                <th>Marca</th>
+                <th>Tipo de Prenda</th>
+                <th>Material</th>
+                <th>Precio Aproximado (USD)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Negro</td>
+                <td>M</td>
+                <td>Zara</td>
+                <td>Blazer Oversize</td>
+                <td>Poliéster Reciclado</td>
+                <td>$89</td>
+            </tr>
+            <tr>
+                <td>Verde Oliva</td>
+                <td>L</td>
+                <td>H&M Conscious</td>
+                <td>Pantalón Cargo</td>
+                <td>Algodón Orgánico</td>
+                <td>$49</td>
+            </tr>
+            <tr>
+                <td>Beige</td>
+                <td>S</td>
+                <td>COS</td>
+                <td>Camiseta Básica</td>
+                <td>Lino</td>
+                <td>$39</td>
+            </tr>
+            <tr>
+                <td>Rojo Profundo</td>
+                <td>M</td>
+                <td>Mango</td>
+                <td>Vestido Slip</td>
+                <td>Seda Vegana</td>
+                <td>$99</td>
+            </tr>
+            <tr>
+                <td>Gris Piedra</td>
+                <td>XL</td>
+                <td>Uniqlo</td>
+                <td>Abrigo Largo</td>
+                <td>Lana Reciclada</td>
+                <td>$129</td>
+            </tr>
+            <tr>
+                <td>Azul Marino</td>
+                <td>M</td>
+                <td>Levi’s</td>
+                <td>Jeans Rectos</td>
+                <td>Denim Reciclado</td>
+                <td>$89</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<footer>
+<section id="contacto">
+    <h2>CONTACTOS</h2>
+    <p> Milena Cartuche<br>
+        Tel: 0987942943<br>
+        <a href="mailto:marjoriecartuche2016@gmail.com"> milenita@gmail.com</a><br>
+        <a href="mailto:marjoriecartuche@gmail.com"> mayu@gmail.com</a>
+    </p>
+</section>
+</footer>
+</body>
+</body>
+</html>
