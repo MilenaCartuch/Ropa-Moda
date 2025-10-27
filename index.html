@@ -49,7 +49,7 @@
         nav {
         float: left;
         width: 30%;
-        height: 950px; /* only for demonstration, should be removed */
+        height: 850px; /* only for demonstration, should be removed */
         background: #ccc;
         padding: 50px;
         }
@@ -131,6 +131,34 @@
         y necesidades.
     </p>
 <img src = "ropa.jpg">
+<h2>Mi video de YouTube</h2>
+
+  <!-- Contenedor del video -->
+  <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/HyRWEBBdlDw" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+  </iframe>
+   <h2>Mi video local</h2>
+
+  <!-- Contenedor del video -->
+  <video width="640" height="360" controls>
+    <source src="moda.mp4" type="video/mp4">
+    <source src="video.webm" type="video/webm">
+    <source src="video.ogg" type="video/ogg">
+    Tu navegador no soporta la etiqueta de video HTML5.
+  </video>
+  <h2>Mi audio local</h2>
+
+  <!-- Contenedor del audio -->
+  <audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    <source src="audio.ogg" type="audio/ogg">
+    <source src="audio.wav" type="audio/wav">
+    Tu navegador no soporta el elemento de audio HTML5.
+  </audio>
     <table>
         <thead>
             <tr>
@@ -194,6 +222,7 @@
         </tbody>
     </table>
 </section>
+
 <footer>
 <section id="contacto">
     <h2>CONTACTOS</h2>
