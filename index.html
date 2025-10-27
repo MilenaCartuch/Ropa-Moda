@@ -130,10 +130,8 @@
         tanto las tendencias estéticas como el enfoque creciente en la sostenibilidad y la variedad de estilos disponibles para distintos gustos 
         y necesidades.
     </p>
-<img src = "ropa.jpg">
-<h2>Mi video de YouTube</h2>
-
-  <!-- Contenedor del video -->
+    <img src = "ropa.jpg">
+    <h2>Mi video de YouTube</h2>
   <iframe width="560" height="315" 
           src="https://www.youtube.com/embed/HyRWEBBdlDw" 
           title="YouTube video player" 
@@ -141,27 +139,22 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
           allowfullscreen>
   </iframe>
-   <h2>Mi video local</h2>
-
-  <!-- Contenedor del video -->
+    <h2>Mi video local</h2>
   <video width="640" height="360" controls>
     <source src="moda.mp4" type="video/mp4">
     <source src="video.webm" type="video/webm">
     <source src="video.ogg" type="video/ogg">
     Tu navegador no soporta la etiqueta de video HTML5.
   </video>
-  <h2>Mi audio local</h2>
-
-  <!-- Contenedor del audio -->
+    <h2>Mi audio local</h2>
   <audio controls>
     <source src="audio.mp3" type="audio/mpeg">
     <source src="audio.ogg" type="audio/ogg">
-    <source src="audio.wav" type="audio/wav">
-    Tu navegador no soporta el elemento de audio HTML5.
+      <source src="audio.wav" type="audio/wav">
   </audio>
     <table>
         <thead>
-            <tr>
+            <tr>    
                 <th>Color</th>
                 <th>Talla</th>
                 <th>Marca</th>
@@ -221,8 +214,37 @@
             </tr>
         </tbody>
     </table>
-</section>
+    <h2>Formulario de Pedido</h2>
 
+  <form action="/enviar" method="post">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+    <br><br>
+    <label for="cedula">Número de Cédula:</label><br>
+    <input type="text" id="cedula" name="cedula" placeholder="Ingresa tu cédula" required>
+    <br><br>
+    <label for="prendas">Prendas:</label><br>
+    <input type="text" id="prendas" name="prendas" placeholder="Ej: Camisa, pantalón, etc." required>
+    <br><br>
+    <label for="talla">Talla:</label><br>
+    <select id="talla" name="talla" required>
+      <option value="">Seleccione una talla</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+    </select>
+    <br><br>
+    <label for="direccion">Dirección:</label><br>
+    <textarea id="direccion" name="direccion" rows="3" cols="30" placeholder="Ingresa tu dirección completa" required></textarea>
+    <br><br>
+    <label for="telefono">Número de Teléfono:</label><br>
+    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 3001234567" required>
+    <br><br>
+    <input type="submit" value="Enviar Pedido">
+  </form>
+</section>
 <footer>
 <section id="contacto">
     <h2>CONTACTOS</h2>
