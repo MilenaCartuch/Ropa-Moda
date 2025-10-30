@@ -1,169 +1,195 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Ropa</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            font-family: Arial, sans-serif;
-            margin-top: 20px;
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f3f3f3;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 15px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ropa</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-        * {
-        box-sizing: border-box;
-        }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
 
-        body {
-        font-family: Arial, Helvetica, sans-serif;
-        }
+    /* Estilos del encabezado */
+    header {
+      background-color: #f4bbea;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: rgb(29, 12, 12);
+    }
 
-        /* Style the header */
-        header {
-        background-color: #666;
-        padding: 30px;
-        text-align: center;
-        font-size: 35px;
-        color: white;
-        }
+    /* Barra lateral de navegación */
+    nav {
+      float: left;
+      width: 20%;
+      height: 2500px;
+      background: #a9e8db;
+      padding: 50px;
+ 
+    }
 
-        /* Create two columns/boxes that floats next to each other */
-        nav {
-        float: left;
-        width: 30%;
-        height: 850px; /* only for demonstration, should be removed */
-        background: #ccc;
-        padding: 50px;
-        }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
 
-        /* Style the list inside the menu */
-        nav ul {
-        list-style-type: none;
-        padding: 0;
-        }
+    nav ul li {
+      margin-bottom: 15px;
+    }
 
-        article {
-        float: left;
-        padding: 20px;
-        width: 70%;
-        background-color: #f1f1f1;
-        height: 300px; /* only for demonstration, should be removed */
-        }
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
 
-        /* Clear floats after the columns */
-        section::after {
-        content: "";
-        display: table;
-        clear: both;
-        }
+    nav a:hover {
+      color: #333;
+    }
 
-        /* Style the footer */
-        footer {
-        background-color: #777;
-        padding: 10px;
-        text-align: center;
-        color: white;
-        }
+    /* Contenido principal */
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color:  #d3b5ef;
+    }
 
-        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-        @media (max-width: 600px) {
-        nav, article {
-            width: 100%;
-            height: auto;
-        }
-        }
-    </style>
+    /* Tabla */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      margin-top: 20px; 
+    }
+
+    th, td {
+      border: 1px solid #e1f4bb;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e1f4bb;
+    }
+
+    /* Limpieza de flotantes */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Pie de página */
+    footer {
+      background-color: #f4bbea;
+      padding: 10px;
+      text-align: center;
+      color: rgb(0, 0, 0);
+    }
+
+    /* Diseño adaptable */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<header>
-    <h1> Bienvenidos a mi rinconcito de la moda</h1>
-</header>
 
-<nav>
-    <ul>
-        <li><a href="#inicio"> Inicio </a></li> <br>
-        <li><a href="#acerca"> Acerca de </a></li><br>
-        <li><a href="#contacto">Contacto</a></li><br>
-    </ul>
-</nav>
+  <header>
+    <h1>Bienvenidos a mi rinconcito de la moda</h1>
+  </header>
 
-<section id="inicio">
-    <h2>INICIO</h2>
-    <p> 
-       ¡Bienvenido(a) a nuestra tienda de moda, el lugar donde tu estilo cobra vida! Aquí encontrarás una cuidada selección de ropa diseñada 
-       para hacerte sentir auténtico(a), cómodo(a) y a la vanguardia de las últimas tendencias. Ya sea que busques un look casual, elegante 
-       o algo único para una ocasión especial, tenemos opciones para cada personalidad y momento. Nos apasiona la moda y queremos que disfrutes 
-       cada paso de tu experiencia con nosotros. Explora nuestras colecciones, descubre nuevas inspiraciones y déjate llevar por tu creatividad. 
-       Gracias por visitarnos, ¡estamos aquí para ayudarte a vestir tu mejor versión!
-    </p>
+  <section>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#acerca">Acerca de</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
 
-    <h2>Acerca de</h2>
-    <p>
-        En nuestra tienda creemos que la ropa es mucho más que una necesidad: es una forma de expresión, confianza y estilo personal. 
-        Nos dedicamos a ofrecer prendas de alta calidad que combinan comodidad, diseño y tendencia, pensadas para adaptarse a cada estilo de vida.
-        Trabajamos con pasión para seleccionar y crear colecciones que inspiren a nuestros clientes a vestirse con autenticidad y seguridad. 
-        Valoramos la originalidad, la inclusión y la sostenibilidad, por eso buscamos marcas y materiales que reflejen esos principios. Nuestro
-        objetivo es que cada persona que nos visite encuentre algo que la represente y la haga sentir bien consigo misma.
-    </p>
-    <h2>PRENDAS A TU GUSTO</h2>
-    <p>
-        Esta sección presenta una tabla con información clave sobre diversas prendas de moda, incluyendo detalles como color, talla, marca, tipo
-        de prenda, material y precio aproximado. Su objetivo es ofrecer una visión general de las opciones actuales en el mercado, destacando 
-        tanto las tendencias estéticas como el enfoque creciente en la sostenibilidad y la variedad de estilos disponibles para distintos gustos 
-        y necesidades.
-    </p>
-    <img src = "ropa.jpg">
-    <h2>Mi video de YouTube</h2>
-  <iframe width="560" height="315" 
-          src="https://www.youtube.com/embed/HyRWEBBdlDw" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    <article>
+      <section id="inicio">
+        <h2>INICIO</h2>
+        <p>
+            ¡Bienvenido(a) a nuestra tienda de moda, el lugar donde tu estilo cobra vida! Aquí encontrarás una cuidada 
+            selección de ropa diseñada para hacerte sentir auténtico(a), cómodo(a) y a la vanguardia de las últimas 
+            tendencias. Ya sea que busques un look casual, elegante o algo único para una ocasión especial, tenemos 
+            opciones para cada personalidad y momento. Nos apasiona la moda y queremos que disfrutes cada paso de tu
+            experiencia con nosotros. Explora nuestras colecciones, descubre nuevas inspiraciones y déjate llevar por 
+            tu creatividad. Gracias por visitarnos, ¡estamos aquí para ayudarte a vestir tu mejor versión!
+        </p>
+      </section>
+
+      <section id="acerca">
+        <h2>ACERCA DE</h2>
+        <p>
+            En nuestra tienda creemos que la ropa es mucho más que una necesidad: es una forma de expresión, confianza 
+            y estilo personal. Nos dedicamos a ofrecer prendas de alta calidad que combinan comodidad, diseño y tendencia,
+            pensadas para adaptarse a cada estilo de vida. Trabajamos con pasión para seleccionar y crear colecciones que
+            inspiren a nuestros clientes a vestirse con autenticidad y seguridad. Valoramos la originalidad, la inclusión 
+            y la sostenibilidad, por eso buscamos marcas y materiales que reflejen esos principios. Nuestro objetivo es 
+            que cada persona que nos visite encuentre algo que la represente y la haga sentir bien consigo misma.          
+        </p>
+      </section>
+
+      <section id="prendas">
+        <h2>PRENDAS A TU GUSTO</h2>
+        <p>
+            Esta sección presenta una tabla con información clave sobre diversas prendas de moda, incluyendo detalles como 
+            color, talla, marca, tipo de prenda, material y precio aproximado. Su objetivo es ofrecer una visión general 
+            de las opciones actuales en el mercado, destacando tanto las tendencias estéticas como el enfoque creciente en 
+            la sostenibilidad y la variedad de estilos disponibles para distintos gustos y necesidades.
+        </p>
+
+        <img src="ropa.jpg" alt="Imagen de ropa" width="400">
+
+        <h3>Mi video de YouTube</h3>
+        <iframe
+          width="560" height="315"
+          src="https://www.youtube.com/embed/HyRWEBBdlDw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen>
-  </iframe>
-    <h2>Mi video local</h2>
-  <video width="640" height="360" controls>
-    <source src="moda.mp4" type="video/mp4">
-    <source src="video.webm" type="video/webm">
-    <source src="video.ogg" type="video/ogg">
-    Tu navegador no soporta la etiqueta de video HTML5.
-  </video>
-    <h2>Mi audio local</h2>
-  <audio controls>
-    <source src="audio.mp3" type="audio/mpeg">
-    <source src="audio.ogg" type="audio/ogg">
-      <source src="audio.wav" type="audio/wav">
-  </audio>
-    <table>
-        <thead>
-            <tr>    
-                <th>Color</th>
-                <th>Talla</th>
-                <th>Marca</th>
-                <th>Tipo de Prenda</th>
-                <th>Material</th>
-                <th>Precio Aproximado (USD)</th>
+        </iframe>
+
+        <h3>Mi video local</h3>
+        <video width="640" height="360" controls>
+          <source src="moda.mp4" type="video/mp4">
+          <source src="video.webm" type="video/webm">
+          <source src="video.ogg" type="video/ogg">
+        </video>
+
+        <h3>Mi audio local</h3>
+        <audio controls>
+          <source src="audio.mp3" type="audio/mpeg">
+          <source src="audio.ogg" type="audio/ogg">
+          <source src="audio.wav" type="audio/wav">
+        </audio>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Color</th>
+              <th>Talla</th>
+              <th>Marca</th>
+              <th>Tipo de Prenda</th>
+              <th>Material</th>
+              <th>Precio Aproximado (USD)</th>
             </tr>
-        </thead>
-        <tbody>
+          </thead>
+          <tbody>
             <tr>
                 <td>Negro</td>
                 <td>M</td>
@@ -198,63 +224,63 @@
             </tr>
             <tr>
                 <td>Gris Piedra</td>
-                <td>XL</td>
-                <td>Uniqlo</td>
+                <td>XL</td><td>Uniqlo</td>
                 <td>Abrigo Largo</td>
                 <td>Lana Reciclada</td>
                 <td>$129</td>
             </tr>
             <tr>
                 <td>Azul Marino</td>
-                <td>M</td>
-                <td>Levi’s</td>
+                <td>M</td><td>Levi’s</td>
                 <td>Jeans Rectos</td>
                 <td>Denim Reciclado</td>
                 <td>$89</td>
             </tr>
-        </tbody>
-    </table>
-    <h2>Formulario de Pedido</h2>
+          </tbody>
+        </table>
 
-  <form action="/enviar" method="post">
-    <label for="nombre">Nombre:</label><br>
-    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
-    <br><br>
-    <label for="cedula">Número de Cédula:</label><br>
-    <input type="text" id="cedula" name="cedula" placeholder="Ingresa tu cédula" required>
-    <br><br>
-    <label for="prendas">Prendas:</label><br>
-    <input type="text" id="prendas" name="prendas" placeholder="Ej: Camisa, pantalón, etc." required>
-    <br><br>
-    <label for="talla">Talla:</label><br>
-    <select id="talla" name="talla" required>
-      <option value="">Seleccione una talla</option>
-      <option value="XS">XS</option>
-      <option value="S">S</option>
-      <option value="M">M</option>
-      <option value="L">L</option>
-      <option value="XL">XL</option>
-    </select>
-    <br><br>
-    <label for="direccion">Dirección:</label><br>
-    <textarea id="direccion" name="direccion" rows="3" cols="30" placeholder="Ingresa tu dirección completa" required></textarea>
-    <br><br>
-    <label for="telefono">Número de Teléfono:</label><br>
-    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 3001234567" required>
-    <br><br>
-    <input type="submit" value="Enviar Pedido">
-  </form>
-</section>
-<footer>
-<section id="contacto">
+        <h3>Formulario de Pedido</h3>
+        <form action="/enviar" method="post">
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required><br><br>
+
+          <label for="cedula">Número de Cédula:</label><br>
+          <input type="text" id="cedula" name="cedula" placeholder="Ingresa tu cédula" required><br><br>
+
+          <label for="prendas">Prendas:</label><br>
+          <input type="text" id="prendas" name="prendas" placeholder="Ej: Camisa, pantalón, etc." required><br><br>
+
+          <label for="talla">Talla:</label><br>
+          <select id="talla" name="talla" required>
+            <option value="">Seleccione una talla</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select><br><br>
+
+          <label for="direccion">Dirección:</label><br>
+          <textarea id="direccion" name="direccion" rows="3" cols="30" placeholder="Ingresa tu dirección completa" required></textarea><br><br>
+
+          <label for="telefono">Número de Teléfono:</label><br>
+          <input type="tel" id="telefono" name="telefono" placeholder="Ej: 3001234567" required><br><br>
+
+          <input type="submit" value="Enviar Pedido">
+        </form>
+      </section>
+    </article>
+  </section>
+
+  <footer id="contacto">
     <h2>CONTACTOS</h2>
-    <p> Milena Cartuche<br>
-        Tel: 0987942943<br>
-        <a href="mailto:marjoriecartuche2016@gmail.com"> milenita@gmail.com</a><br>
-        <a href="mailto:marjoriecartuche@gmail.com"> mayu@gmail.com</a>
+    <p>
+      Milena Cartuche<br>
+      Tel: 0987942943<br>
+      <a href="mailto:marjoriecartuche2016@gmail.com">milenita@gmail.com</a><br>
+      <a href="mailto:marjoriecartuche@gmail.com">mayu@gmail.com</a>
     </p>
-</section>
-</footer>
-</body>
+  </footer>
+
 </body>
 </html>
